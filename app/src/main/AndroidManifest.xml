@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gruzam.ubaki_2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".splashActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+        </activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+
+
+        <activity android:name=".Learning_01" />
+        <activity android:name=".Game_01" />
+        <activity android:name=".Ddal"/>
+        <activity android:name=".Jajang"/>
+        <activity android:name=".Music_Item"
+            android:screenOrientation="landscape"
+            ><!--가로로 만들기-->
+        </activity>
+        <activity android:name=".Picturegame"/>
+        <activity android:name=".Pungsun"/>
+        <activity android:name=".Soum"/>
+
+        </application>
+
+</manifest>

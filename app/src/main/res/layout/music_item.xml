@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xphone_background">
+
+
+<!--1040-->
+    <Button
+        android:id="@+id/btn_cbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="215px"
+        android:layout_height="1040px"
+        android:background="@drawable/cbutton"
+        tools:ignore="ButtonStyle,PxUsage,RtlHardcoded" />
+    <Button
+        android:id="@+id/btn_dbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="215px"
+        android:layout_height="962px"
+        android:background="@drawable/dbutton"
+        tools:ignore="ButtonStyle,PxUsage,RtlHardcoded" />
+    <Button
+        android:id="@+id/btn_ebutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_width="215px"
+        android:layout_height="905px"
+        android:background="@drawable/ebutton"
+        tools:ignore="ButtonStyle,PxUsage,RtlHardcoded" />
+    <Button
+        android:id="@+id/btn_fbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="215px"
+        android:layout_height="849px"
+        android:background="@drawable/fbutton"
+        tools:ignore="ButtonStyle,PxUsage,RtlHardcoded" />
+    <Button
+        android:id="@+id/btn_gbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="37dp"
+        android:layout_width="215px"
+        android:layout_height="808px"
+        android:background="@drawable/gbutton"
+        tools:ignore="ButtonStyle,PxUsage,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/btn_abutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="41dp"
+        android:layout_width="215px"
+        android:layout_height="765px"
+        android:background="@drawable/abutton"
+        tools:ignore="ButtonStyle,PxUsage,RtlHardcoded" />
+    <Button
+        android:id="@+id/btn_bbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_width="215px"
+        android:layout_height="712px"
+        android:background="@drawable/bbutton"
+        tools:ignore="ButtonStyle,PxUsage,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/btn_mcbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="47dp"
+        android:layout_width="215px"
+        android:layout_height="652px"
+        android:background="@drawable/mcbutton"
+        tools:ignore="ButtonStyle,PxUsage,RtlHardcoded" />
+
+
+
+</LinearLayout>

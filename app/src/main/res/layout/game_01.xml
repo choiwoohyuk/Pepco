@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_1"
+    >
+
+    <Button
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_jaja"
+        android:background="@drawable/zzz"
+
+
+
+        />
+
+    <Button
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_dd"
+        android:background="@drawable/dalrang"
+
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_picture"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/crd"
+
+
+        />
+
+    <Button
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="190dp"
+        android:id="@+id/btn_boom"
+        android:background="@drawable/psp"
+
+        />
+
+
+    <Button
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="340dp"
+        android:id="@+id/btn_soso"
+        android:background="@drawable/bw"
+
+        />
+
+    <Button
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="340dp"
+        android:id="@+id/btn_musicitem"
+        android:background="@drawable/mmu"
+
+        />
+
+
+</RelativeLayout>
