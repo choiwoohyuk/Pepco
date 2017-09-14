@@ -8,5 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowNoTitle">true</item>
     </style>
+<!-- alertdialog start -->
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textSize">14dp</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+        <!-- 가로방향 alertdialog %크기 설정 -->
+        <item name="android:windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+
+        <!-- 투명도 설정 -->
+        <item name="android:windowBackground">@color/custom_color_transparent</item>
+
+        <item name="buttonBarPositiveButtonStyle">@style/buttonBarButtonStyle.Positive</item>
+    </style>
+
+    <style name="buttonBarButtonStyle" parent="Theme.AppCompat.Light.Dialog">
+    </style>
+
+    <style name="buttonBarButtonStyle.Positive">
+        <item name="backgroundTint">@color/custom_color_button</item>
+    </style>
+<!-- alertdialog end -->
 
 </resources>
