@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/game_1">
 
-</LinearLayout>
+    tools:context=".Soum">
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/qor_wls"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="112dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/qor_hair"
+        android:textOn=""
+        android:textOff=""
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="112dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="45dp"/>
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</LinearLayout>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/card_white">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="324dp"
+        android:layout_height="372dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:background="#00000000"
+        android:src="@drawable/zkem_t" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="299dp"
+        android:layout_height="101dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/zkem_g2"
+        android:layout_below="@+id/image"
+        android:layout_alignParentStart="true"
+        android:background="#00000000"
+        android:layout_marginTop="16dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="72dp"
+        android:layout_height="101dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/zkem_rep"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:background="#00000000"
+        android:src="@drawable/zkem_rep"/>
+
+
+</RelativeLayout>
