@@ -109,10 +109,4 @@ public class Jajang extends Activity {
         Stop();
     }
 
-
-
-
-
-
-
     }
