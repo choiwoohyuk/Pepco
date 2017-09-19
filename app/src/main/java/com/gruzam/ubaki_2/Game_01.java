@@ -73,7 +73,7 @@ public class Game_01 extends Activity {
                 new Button.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        Intent intent = new Intent(Game_01.this, com.gruzam.ubaki_2.exam_card.class);
+                        Intent intent = new Intent(Game_01.this, com.gruzam.ubaki_2.Picturegame.class);
                         startActivity(intent);
                     }
                 }
