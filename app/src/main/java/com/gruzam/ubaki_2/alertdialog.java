@@ -35,7 +35,7 @@ public class alertdialog extends AppCompatActivity {
             "문제 4) 다음 중 옳지 않은 치료방법은?",
             "문제 5) 기저귀 발진은 기저귀를 차고있는 엉덩이에만 발생하는 피부병이다.",
             "문제 6) 다음 중 올바른 치료 방법이 아닌 것은?"
-    }
+    };
 
     String[] child_safety = {
             "문제 7) 심장 마사지 시 직접 흉부 압박을 실시하는 두 손가락을 고르시오.",

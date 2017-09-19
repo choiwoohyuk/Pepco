@@ -7,15 +7,13 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import com.gruzam.ubaki_2.Ddal;
-import com.gruzam.ubaki_2.R;
-
-import static com.gruzam.ubaki_2.R.id.btn_jaja;
 import static com.gruzam.ubaki_2.R.id.btn_boom;
 import static com.gruzam.ubaki_2.R.id.btn_dd;
-import static com.gruzam.ubaki_2.R.id.btn_soso;
+import static com.gruzam.ubaki_2.R.id.btn_jaja;
 import static com.gruzam.ubaki_2.R.id.btn_musicitem;
 import static com.gruzam.ubaki_2.R.id.btn_picture;
+import static com.gruzam.ubaki_2.R.id.btn_soso;
+
 /**
  * Created by CWH-PC on 2017-07-04.
  */
@@ -75,7 +73,7 @@ public class Game_01 extends Activity {
                 new Button.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        Intent intent = new Intent(Game_01.this, com.gruzam.ubaki_2.Picturegame.class);
+                        Intent intent = new Intent(Game_01.this, com.gruzam.ubaki_2.exam_card.class);
                         startActivity(intent);
                     }
                 }

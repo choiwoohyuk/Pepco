@@ -1,12 +1,9 @@
 package com.gruzam.ubaki_2;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.view.WindowManager;
 
 /**
  * Created by CWH-PC on 2017-07-25.

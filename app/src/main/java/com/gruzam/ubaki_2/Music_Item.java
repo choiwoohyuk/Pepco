@@ -5,11 +5,9 @@ import android.content.pm.ActivityInfo;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-
 
 import static com.gruzam.ubaki_2.R.id.btn_abutton;
 import static com.gruzam.ubaki_2.R.id.btn_bbutton;

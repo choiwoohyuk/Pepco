@@ -1,22 +1,14 @@
 package com.gruzam.ubaki_2;
 
 import android.app.Activity;
-import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ImageView;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
-import static android.R.attr.orientation;
 
 /**
  * Created by CWH-PC on 2017-07-04.
