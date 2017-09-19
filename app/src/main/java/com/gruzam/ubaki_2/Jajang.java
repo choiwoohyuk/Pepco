@@ -73,14 +73,14 @@ public class Jajang extends Activity {
 // 재생중이면 실행될 작업 (정지)
                 mp.pause();
 
-                btn.setBackground(ContextCompat.getDrawable(this, R.drawable.pause));
+                btn.setBackground(ContextCompat.getDrawable(this, R.drawable.play));
 
 
             }else{
 // 재생중이 아니면 실행될 작업 (재생)
                 mp.start();
 
-                btn.setBackground(ContextCompat.getDrawable(this, R.drawable.play));
+                btn.setBackground(ContextCompat.getDrawable(this, R.drawable.pause));
 
             }}
 
