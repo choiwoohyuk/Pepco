@@ -7,7 +7,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="싸이"
+        android:text="Twinkle Twinkle Little Star"
         android:id="@+id/pineapple"
         android:layout_marginTop="47dp"
         android:layout_alignParentTop="true"
@@ -16,7 +16,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="뻘건맛"
+        android:text="hush little baby"
         android:id="@+id/orange"
         android:layout_below="@+id/pineapple"
         android:layout_alignStart="@+id/pineapple" />
