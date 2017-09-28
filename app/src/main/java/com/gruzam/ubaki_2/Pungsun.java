@@ -20,6 +20,7 @@ import android.widget.ImageView;
 public class Pungsun extends Activity {
     int index = (int)(Math.random()*5);
     int res = ran[index];
+    int test;
 
     int a_1 = (int)(Math.random()*5);
     int a_2 = (int)(Math.random()*5);
@@ -54,7 +55,7 @@ public class Pungsun extends Activity {
     public static final int ran[]={R.drawable.ps_green,R.drawable.ps_orange,
             R.drawable.ps_purple,R.drawable.ps_red,R.drawable.ps_yellow};
 
-
+//addtsesat
     //ImageView img[] = new ImageView[24];
     /*int[] img = {R.id.image_ps_1,R.id.image_ps_2,R.id.image_ps_3,R.id.image_ps_4,R.id.image_ps_5,
             R.id.image_ps_6,R.id.image_ps_7,R.id.image_ps_8,R.id.image_ps_9,R.id.image_ps_10,
