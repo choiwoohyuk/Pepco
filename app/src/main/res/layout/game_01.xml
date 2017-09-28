@@ -10,9 +10,9 @@
         android:layout_width="300px"
         android:layout_height="300px"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="200dp"
         android:id="@+id/btn_jaja"
-        android:background="@drawable/zzz"
+        android:background="@drawable/game_button_zzz"
 
 
 
@@ -22,9 +22,9 @@
         android:layout_width="300px"
         android:layout_height="300px"
         android:layout_marginLeft="230dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="200dp"
         android:id="@+id/btn_dd"
-        android:background="@drawable/dalrang"
+        android:background="@drawable/game_button_dalrang"
 
 
         />
@@ -35,8 +35,8 @@
         android:layout_width="300px"
         android:layout_height="300px"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="190dp"
-        android:background="@drawable/crd"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/game_button_crd"
 
 
         />
@@ -45,9 +45,9 @@
         android:layout_width="300px"
         android:layout_height="300px"
         android:layout_marginLeft="230dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="340dp"
         android:id="@+id/btn_boom"
-        android:background="@drawable/psp"
+        android:background="@drawable/game_button_psp"
 
         />
 
@@ -56,9 +56,9 @@
         android:layout_width="300px"
         android:layout_height="300px"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="490dp"
         android:id="@+id/btn_soso"
-        android:background="@drawable/bw"
+        android:background="@drawable/game_button_bw"
 
         />
 
@@ -66,9 +66,9 @@
         android:layout_width="300px"
         android:layout_height="300px"
         android:layout_marginLeft="230dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="490dp"
         android:id="@+id/btn_musicitem"
-        android:background="@drawable/mmu"
+        android:background="@drawable/game_button_mmu"
 
         />
 
