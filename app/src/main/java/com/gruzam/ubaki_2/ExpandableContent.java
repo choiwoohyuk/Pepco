@@ -1,7 +1,9 @@
 package com.gruzam.ubaki_2;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ExpandableListView;
 
 import java.util.ArrayList;
@@ -33,7 +35,17 @@ public class ExpandableContent extends Activity {
         expListView.setAdapter(listAdapter);
 
         // Listview Group click listener
-
+        expListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                Intent intentFilter = new Intent(ExpandableContent.this, ELearningAct.class);
+                intentFilter.putExtra("Change", "True");
+                ELearningAct fragmentAct = new ELearningAct();
+                fragmentAct.throwValue(groupPosition, childPosition);
+                startActivity(intentFilter);
+                return false;
+            }
+        });
         };
     /*
      * Preparing the list data
@@ -53,7 +65,7 @@ public class ExpandableContent extends Activity {
         parentes.add("유아기");
 
 
-        List<String> prevention = new ArrayList<String>();
+            List<String> prevention = new ArrayList<String>();
         prevention.add("신생아 태열");
         prevention.add("아토피 피부염");
         prevention.add("기저귀 발진");

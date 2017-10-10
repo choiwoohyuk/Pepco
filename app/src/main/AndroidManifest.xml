@@ -25,8 +25,12 @@
             </activity>
 
 
-        <activity android:name=".Learning_01" />
         <activity android:name=".Game_01" />
+        <activity android:name=".ExpandableContent" />
+        <activity android:name=".ELearningAct"
+            android:theme="@style/NoActionbar"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"/>
         <activity android:name=".Ddal"/>
         <activity android:name=".Jajang"/>
         <activity android:name=".Music_Item"

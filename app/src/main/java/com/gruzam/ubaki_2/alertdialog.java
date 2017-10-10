@@ -1,12 +1,8 @@
 package com.gruzam.ubaki_2;
 
+import android.content.Context;
 import android.content.DialogInterface;
-import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,7 +10,7 @@ import android.widget.Toast;
  * Created by 황인태 on 2017-09-14.
  */
 
-public class alertdialog extends AppCompatActivity {
+public class alertdialog {
 
     int x = 0;
     int answer = 0;
@@ -127,39 +123,29 @@ public class alertdialog extends AppCompatActivity {
 
     public AlertDialog.Builder QuestionManual;
     public AlertDialog.Builder Explanation;
+    public Context mcontext;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);/*상태바 없애기*/
-        setContentView(R.layout.activity_main);
 
-        QuestionManual = new AlertDialog.Builder(this, R.style.AlertDialogTheme); //styles.xml 테마 적용 부분 적용
-        Explanation = new AlertDialog.Builder(this);
+    protected void alertdialog() {
+        QuestionManual = new AlertDialog.Builder(mcontext, R.style.AlertDialogTheme); //styles.xml 테마 적용 부분 적용
+        Explanation = new AlertDialog.Builder(mcontext);
 
-        Button radiobutton = (Button) findViewById(R.id.set_button);
-
-        radiobutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                makeQuiz();
-            }
-        });
+        //makeQuiz();
 
         switch (show_quiz) {
-            case 1:
+            case 0:
                 Question = parant_teaching;
                 Quiz = parant_teaching_quiz;
                 Correct = parant_teaching_correct;
                 Explanation_arr = Explanation_arr_parant_teaching;
                 break;
-            case 2:
+            case 1:
                 Question = disease;
                 Quiz = disease_quiz;
                 Correct = disease_correct;
                 Explanation_arr = Explanation_arr_disease;
                 break;
-            case 3:
+            case 2:
                 Question = child_safety;
                 Quiz = child_safety_quiz;
                 Correct = child_safety_correct;
@@ -176,7 +162,7 @@ public class alertdialog extends AppCompatActivity {
         }
     }
     public void makeQuiz() {
-        TextView title =  new TextView(this);
+        TextView title =  new TextView(mcontext);
         title.setText(Question[x]);
         title.setTextSize(22);
 
@@ -194,11 +180,10 @@ public class alertdialog extends AppCompatActivity {
         if (Quiz[x][answer].equals(Correct[x])) {
             retValue = "정답입니다!";
             x++; // 다음 문제로 넘어감
-            if (x == Quiz.length) {                                                                     // 모든 문제를 풀면 문제 button이 'NEXT'로 txt가 변경되게 하였다.
-                Button chang_button = (Button) findViewById(R.id.set_button);                           // 따라서 if 안에 다음 영상을 call할 수 있게 추가하면 된다.
-                chang_button.setText("NEXT");
+            if (x == Quiz.length) {
+
             }else {
-                Toast.makeText(getApplicationContext(), retValue, Toast.LENGTH_LONG).show();
+                Toast.makeText(mcontext, retValue, Toast.LENGTH_LONG).show();
                 makeQuiz();
             }
 
@@ -208,12 +193,13 @@ public class alertdialog extends AppCompatActivity {
 
         } else {
             retValue = "틀렸습니다. 다시한번 확인하세요.";
-            Toast.makeText(getApplicationContext(), retValue, Toast.LENGTH_LONG).show();
+            Toast.makeText(mcontext, retValue, Toast.LENGTH_LONG).show();
         }
     }
 
-    public void initQuestion(int init){
+    public void initQuestion(int init, Context mcontext){
         this.show_quiz = init;
+        this.mcontext = mcontext;
     }
 }
 

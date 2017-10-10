@@ -19,9 +19,6 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);/*상태바 없애기*/
         setContentView(R.layout.activity_main);
         startActivity(new Intent(this, splashActivity.class));
-
-
-
 /*
         ImageView imageView1 = (ImageView)findViewById(R.id.btn_hak00);
         imageView1.setImageResource(R.drawable.mainbtnl);
@@ -36,10 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 new Button.OnClickListener(){
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(MainActivity.this, com.gruzam.ubaki_2.Learning_01.class);
+                        Intent intent = new Intent(MainActivity.this, com.gruzam.ubaki_2.ExpandableContent.class);
                         startActivity(intent);
-
-
 
                     }
                 }
